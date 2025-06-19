@@ -1,0 +1,19 @@
+#Clone the Source Repositories
+git clone https://github.com/manoj723529/JavaWebCalculator.git
+git clone https://github.com/manoj723529/vprofile-project.git
+
+#Create a New Repository
+git clone https://github.com/your-username/new-compose.git
+cd new-compose
+
+#Copy the Projects into Separate Directories
+mkdir javaweb
+mkdir vprofile
+
+cp -r ../JavaWebCalculator/* javaweb/
+cp -r ../vprofile-project/* vprofile/
+
+#Commit and Push the Changes
+git add .
+git commit -m "docker-compose"
+git push origin main
